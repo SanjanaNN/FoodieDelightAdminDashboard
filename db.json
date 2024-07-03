@@ -1,0 +1,114 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Fresh Delicacy1",
+      "location": "Bengaluru",
+      "description": "Fresh home cooked food",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "902346789",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy1.com"
+    },
+    {
+      "name": "Fresh Delicacy2",
+      "description": "Fresh home cooked food",
+      "location": "Mysore",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "9120467898",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy2.com",
+      "id": "2"
+    },
+    {
+      "id": "4",
+      "name": "Fresh Delicacy4",
+      "location": "Bengaluru",
+      "description": "Fresh home cooked food",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "912340089",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy4.com"
+    },
+    {
+      "name": "Fresh Delicacy5",
+      "description": "Fresh home cooked food",
+      "location": "Delhi",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "9123467898",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy5.com",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "name": "Fresh Delicacy6",
+      "location": "Bengaluru",
+      "description": "Fresh home cooked food",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "912346789",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy6.com"
+    },
+    {
+      "name": "Fresh",
+      "description": "Fresh home cooked food",
+      "location": "Bengaluru",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "9123467891",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy7.com",
+      "id": "7"
+    },
+    {
+      "id": "8",
+      "name": "Fresh Delicacy8",
+      "location": "Bengaluru",
+      "description": "Fresh home cooked food",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "912346789",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy8.com"
+    },
+    {
+      "id": "9",
+      "name": "Fresh Delicacy9",
+      "location": "Bengaluru",
+      "description": "Fresh home cooked food",
+      "cuisine": "Veg and Non-Veg",
+      "phoneNumber": "912346789",
+      "openingHours": "12:00 PM - 9:00PM",
+      "website": "www.freshdelicacy9.com"
+    },
+    {
+      "id": "c12d",
+      "name": "Newly sid",
+      "description": "Snacks",
+      "location": "Bengaluru",
+      "cuisine": "Veg",
+      "phoneNumber": "8888888889",
+      "openingHours": "2-9pm",
+      "website": "www.newly.com"
+    },
+    {
+      "id": "c6de",
+      "name": "Fresh Food",
+      "description": "Delicious home made food",
+      "location": "Bengaluru",
+      "cuisine": "Veg",
+      "phoneNumber": "9876543211",
+      "openingHours": "12:00 PM- 9:00PM",
+      "website": "www.freshfood.com"
+    },
+    {
+      "name": "Fresh food",
+      "description": "delicious food",
+      "location": "Delhi",
+      "cuisine": "Veg",
+      "phoneNumber": "9234569999",
+      "openingHours": "",
+      "website": "www.freshfood.com",
+      "id": "d7f9"
+    }
+  ]
+}

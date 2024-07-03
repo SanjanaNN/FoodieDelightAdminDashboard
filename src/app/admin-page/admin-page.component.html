@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 color-white">
+       <img src="/icon.png" alt="icon">
+        Foodie Delight
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 color-white">
+        
+         Administrator Login
+     </div>
+     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 color-white">
+        
+     </div>
+</nav>
+
+
+<div class="row margin-1em">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+    </div>
+</div>
+
+<div class="row margin-1em">
+<!-- Add new restaturant -->
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+        <button type="button" class="btn btn-primary" (click)="openDialog('add',{})" title="Click to Add new restaurant">ADD</button>
+
+    </div>
+<!-- Export the available restaurant details in the table -->
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+        <button class="btn btn-primary" (click)="exportData()">Export</button>
+
+
+    </div>
+</div>
+<!-- Display all the restaurant on table with edit/delete option-->
+
+<div class="row margin-1em">
+    <ag-grid-angular style="width: 100%; height: calc(100vh - 230px)" id="mainGrid" class="ag-theme-alpine"
+        [defaultColDef]="defaultColDef" [rowData]="rowData" [columnDefs]="colDefs" (gridReady)="onGridReady($event)"
+        [pagination]="true" [enableCellTextSelection]="true" [components]="frameworkComponents"
+        [paginationPageSize]="paginationPageSize" />
+</div>
+
+

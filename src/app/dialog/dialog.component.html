@@ -1,0 +1,93 @@
+
+<div class="container" *ngIf="!showDeleteWarning">
+    <div mat-dialog-actions>
+        <button mat-button class="close-btn" (click)="closeDialog()">X</button>
+    </div>
+    <h4 mat-dialog-title *ngIf="data.addOrEdit == 'add'">Add New Restaurant</h4>
+    <h4 mat-dialog-title *ngIf="data.addOrEdit == 'edit'">Edit Restaurant Details</h4>
+
+    <form [formGroup]="restaurantForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="name">Restaurant Name *</label>
+            <input type="text" formControlName="name" class="form-control" id="name">
+            <div *ngIf="f.name.touched && f.name.invalid" class="text-danger">
+                <div *ngIf="f.name.errors">Restaurant Name is required.</div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description *</label>
+            <textarea formControlName="description" class="form-control" id="description" rows="2"></textarea>
+            <div *ngIf="f.description.touched && f.description.invalid" class="text-danger">
+                <div *ngIf="f.description.errors">Description is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location *</label>
+            <input type="text" formControlName="location" class="form-control" id="location">
+            <div *ngIf="f.location.touched && f.location.invalid" class="text-danger">
+                <div *ngIf="f.location.errors">Location is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="cuisine">Cuisine Type</label>
+            <input type="text" formControlName="cuisine" class="form-control" id="cuisine">
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" formControlName="phoneNumber" class="form-control" id="phoneNumber">
+            <div *ngIf="f.phoneNumber.touched && f.phoneNumber.invalid" class="text-danger">
+                <div *ngIf="f.phoneNumber.errors">Invalid phone number format.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="openingHours">Opening Hours</label>
+            <input type="text" formControlName="openingHours" class="form-control" id="openingHours">
+        </div>
+
+        <div class="form-group">
+            <label for="website">Website</label>
+            <input type="text" formControlName="website" class="form-control" id="website">
+            <div *ngIf="f.website.touched && f.website.invalid" class="text-danger">
+                <div *ngIf="f.website.errors">Invalid website URL format.</div>
+            </div>
+        </div>
+        <div style="margin-top: 0.5em; margin-bottom: 0.5em;">
+            <button type="submit" class="btn btn-primary" [disabled]="restaurantForm.invalid">Submit</button>
+
+        </div>
+    </form>
+
+</div>
+
+<div class="container " *ngIf="showDeleteWarning">
+
+    <div mat-dialog-actions>
+        <button mat-button class="close-btn" (click)="closeDialog()">X</button>
+    </div>
+    <br>
+    Are you sure you want to delete the restaturant details of : 
+    <br>
+    <strong>
+        {{data.mainData.name}} ?
+    </strong>
+     
+
+    <div class="row margin-1em">
+        <div class = "col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+            <button type="submit" class="btn btn-primary" (click)="deleteDetails()">Yes</button>
+
+        </div>
+        <div class = "col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <button type="submit" class="btn btn-warning" (click)="closeDialog()">Cancel</button>
+
+        </div>
+
+    </div>
+</div>
