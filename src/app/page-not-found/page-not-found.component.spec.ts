@@ -17,7 +17,13 @@ describe('PageNotFoundComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the componet', () => {
     expect(component).toBeTruthy();
+  });
+  it('should render page not found message in a h1 tag', () => {
+    const fixture = TestBed.createComponent(PageNotFoundComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('The resource you were looking for is not found!!');
   });
 });
